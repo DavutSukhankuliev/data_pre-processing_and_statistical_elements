@@ -79,6 +79,6 @@ from
 		from direction
 		where direction_type = 'ОБРАТНОЕ')
 	--and stop_number > 1
-	group by route_number) as ROUTE_DISTANCE
+	group by route_number) ROUTE_DISTANCE
 where distance between 13500 and 18900
 order by distance
